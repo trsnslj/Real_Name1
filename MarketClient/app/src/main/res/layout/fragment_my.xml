@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/blue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180sp"
+            style="@style/TextStyle"
+            android:text="我的"
+            android:textColor="@color/white"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:background="#00000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/login" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="#00000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/To_login"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="立即登陆"
+                        android:textColor="@color/blue"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        //我的购物车
+        <com.school.marketclient.activity.SettingBar
+            android:visibility="visible"
+            android:id="@+id/MyCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:bar_leftIcon="@drawable/user_icon_33"
+            app:bar_leftIconSize="@drawable/user_icon_33"
+            app:bar_leftText="我的个人信息"
+            app:bar_rightIcon="@drawable/ico_go_black"
+            tools:bar_rightHint=""/>
+        <com.school.marketclient.activity.SettingBar
+            android:visibility="visible"
+            android:id="@+id/MyOrder"
+            app:bar_leftIcon="@drawable/user_icon_35"
+            app:bar_leftIconSize="@drawable/user_icon_35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            app:bar_leftText="我的上传记录"
+
+            app:bar_rightIcon="@drawable/ico_go_black"
+            tools:bar_rightHint=""/>
+
+
+        <com.school.marketclient.activity.SettingBar
+            android:visibility="visible"
+            android:id="@+id/sb_xfamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            app:bar_leftText=""
+            app:bar_leftIcon="@drawable/user_icon_35"
+            app:bar_leftIconSize="@drawable/user_icon_35"
+            app:bar_rightIcon="@drawable/ico_go_black"
+            tools:bar_rightHint=""/>
+        <com.school.marketclient.activity.SettingBar
+            android:visibility="visible"
+            android:id="@+id/sb_updatepwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            app:bar_leftText="修改密码"
+            app:bar_leftIcon="@drawable/user_icon_35"
+            app:bar_leftIconSize="@drawable/user_icon_35"
+            app:bar_rightIcon="@drawable/ico_go_black"
+            tools:bar_rightHint=""/>
+        <com.school.marketclient.activity.SettingBar
+            android:visibility="visible"
+            android:id="@+id/AboutMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            app:bar_leftText="关于我们"
+            app:bar_leftIcon="@drawable/user_icon_31"
+            app:bar_leftIconSize="@drawable/user_icon_31"
+            app:bar_rightIcon="@drawable/ico_go_black"
+            tools:bar_rightHint=""/>
+
+        <com.school.marketclient.activity.SettingBar
+            android:visibility="visible"
+            android:id="@+id/cancel"
+            app:bar_leftIcon="@drawable/cancel"
+            app:bar_leftIconSize="@drawable/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0px"
+            app:bar_leftText="注销用户"
+            app:bar_rightIcon="@drawable/ico_go_black"
+            tools:bar_rightHint=""/>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/MyCart1"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="70sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="8sp"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/user_icon_33" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4sp"
+                android:layout_marginTop="11sp"
+                android:text="我的购物车"
+                style="@style/TextStyle" />
+
+            <ImageView
+                android:layout_marginLeft="250sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"/>
+        </LinearLayout>
+        <View
+            android:visibility="gone"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px">
+        </View>
+        //我的订单
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/MyOrder1"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                android:src="@drawable/user_icon_35" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6sp"
+                android:layout_marginTop="11sp"
+                android:text="我的订单"
+                style="@style/TextStyle"  />
+            <ImageView
+                android:layout_marginLeft="250sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"/>
+        </LinearLayout>
+        <View
+            android:visibility="gone"
+            android:layout_marginLeft="16sp"
+            android:layout_marginRight="16sp"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="0.5px">
+        </View>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/AboutMe1"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                android:src="@drawable/user_icon_31" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6sp"
+                android:layout_marginTop="11sp"
+                android:text="关于我们"
+                style="@style/TextStyle"  />
+
+            <ImageView
+                android:layout_marginLeft="250sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"/>
+        </LinearLayout>
+        <View
+            android:visibility="gone"
+            style="@style/HorizontalLine" />
+        //注销用户
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/cancel1"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28sp"
+                android:layout_height="28sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="8sp"
+                android:src="@drawable/cancel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6sp"
+                android:layout_marginTop="11sp"
+                android:text="注销用户"
+                style="@style/TextStyle"  />
+
+            <ImageView
+                android:layout_marginLeft="250sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"/>
+        </LinearLayout>
+        <View
+            android:visibility="gone"
+            style="@style/HorizontalLine" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

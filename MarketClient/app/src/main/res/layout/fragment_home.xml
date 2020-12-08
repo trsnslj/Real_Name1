@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@color/blue">
+            <ImageView
+                android:id="@+id/main_back"
+                android:layout_width="24sp"
+                android:src="@drawable/back"
+                android:layout_height="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="165sp"
+                style="@style/TextStyle"
+                android:text=""
+                android:textColor="@color/white"
+                 />
+
+            <ImageView
+                android:id="@+id/main_order"
+                android:layout_width="24sp"
+                android:layout_height="30sp"
+                android:layout_marginLeft="140sp"
+                android:src="@drawable/car"/>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    <GridView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:scrollbars="none"
+
+        android:id="@+id/productList"/>
+
+<!--        <ListView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:id="@+id/productList"/>-->
+
+</LinearLayout>

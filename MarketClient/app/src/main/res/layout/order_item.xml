@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <View style="@style/HorizontalLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/order_down_date"
+            style="@style/TextStyle"
+            android:layout_width="270sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="12sp"
+            android:textColor="@color/black"
+            android:text=""/>
+        <TextView
+            android:id="@+id/order_state"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="12sp"
+            android:textColor="@color/gray"
+            style="@style/TextStyle"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/orderItemList"
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+    </ListView>
+    <View style="@style/HorizontalLine" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="20sp"
+        android:layout_height="60sp">
+        <TextView
+            android:id="@+id/order_item_button"
+            android:layout_marginLeft="20sp"
+            android:gravity="center"
+            android:layout_width="60sp"
+            android:background="@color/gray"
+            android:text=""
+            style="@style/TextStyle"
+            android:layout_height="40sp" />
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_marginLeft="120sp"
+            android:textColor="@color/black"
+            style="@style/TextStyle"
+            android:layout_width="220sp"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>
+    <View style="@style/HorizontalLine" />
+    <!--订单项之间的空格-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+    </LinearLayout>
+
+</LinearLayout>

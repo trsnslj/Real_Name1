@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10sp"
+    android:layout_height="85sp">
+
+        <LinearLayout
+            android:layout_marginTop="25sp"
+            android:id="@+id/index"
+            android:layout_marginLeft="70sp"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bottom_index_img"
+                android:layout_marginTop="8sp"
+                android:layout_width="40sp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="-8sp"
+                android:src="@drawable/main_tab_home_default" />
+            <TextView
+                android:id="@+id/index_text"
+                android:layout_width="wrap_content"
+                style="@style/TextStyle"
+                android:textColor="@drawable/selector_text_press_color"
+                android:text="首页"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="25sp"
+            android:id="@+id/order"
+            android:layout_marginLeft="90sp"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="6sp"
+                android:src="@drawable/order"
+                android:layout_width="22sp"
+                android:layout_height="35sp" />
+            <TextView
+                android:id="@+id/order_text"
+                android:layout_width="wrap_content"
+                style="@style/TextStyle"
+                android:textColor="@drawable/selector_text_press_color"
+                android:text=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="25sp"
+            android:id="@+id/mime"
+            android:layout_marginLeft="80sp"
+            android:layout_width="wrap_content"
+            android:layout_height="60sp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="9sp"
+                android:src="@drawable/main_tab_user_default"
+                android:layout_width="30sp"
+                android:layout_height="30sp" />
+            <TextView
+                android:id="@+id/mine_text"
+                android:textColor="@drawable/selector_text_press_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextStyle"
+                android:text="我的"/>
+        </LinearLayout>
+
+    </LinearLayout>
+

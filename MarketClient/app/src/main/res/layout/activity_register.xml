@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.realname.marketclient.activity.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/blue">
+        <ImageView
+            android:id="@+id/register_back"
+            android:layout_width="30sp"
+            android:src="@drawable/back"
+            android:layout_height="30sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150sp"
+            android:textSize="20sp"
+            android:text=""
+            android:textColor="@color/white"
+            />
+        <ImageView
+            android:id="@+id/register_order"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginLeft="140sp"
+            android:src="@drawable/car"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <View style="@style/HorizontalLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="用  户  名" />
+            <EditText
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/transparent"
+                android:hint="请输入用户名"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:id="@+id/edt_name"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <View style="@style/HorizontalLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="10dp">
+
+            <TextView
+                style="@style/TextStyle"
+                android:text="性        别" />
+            <EditText
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/transparent"
+                android:hint="请输入性别"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:id="@+id/edt_sex"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <View style="@style/HorizontalLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="10dp">
+            <TextView
+                style="@style/TextStyle"
+                android:text="手  机  号" />
+            <EditText
+                android:id="@+id/edt_tel"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/transparent"
+                android:hint="请输入手机号"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <View style="@style/HorizontalLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="10dp">
+            <TextView
+                style="@style/TextStyle"
+                android:text="验  证  码" />
+            <EditText
+                style="@style/TextStyle"
+                android:layout_width="230dp"
+                android:layout_height="45dp"
+                android:id="@+id/edt_code"
+                android:layout_marginStart="10dp"
+                android:background="@color/transparent"
+                android:hint="请输入验证码"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                style="@style/TextStyle"
+                android:text="｜" />
+            <TextView
+                style="@style/TextStyle"
+                android:id="@+id/get_code"
+                android:text="  获取验证码" />
+        </LinearLayout>
+        <View style="@style/HorizontalLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="10dp">
+            <TextView
+                style="@style/TextStyle"
+                android:text="密        码" />
+            <EditText
+                android:id="@+id/edt_pwd"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/transparent"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <View style="@style/HorizontalLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:paddingLeft="10dp">
+            <TextView
+                style="@style/TextStyle"
+                android:text="确认密码" />
+            <EditText
+                android:id="@+id/edt_confirm"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/transparent"
+                android:hint="请输入确认密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <View style="@style/HorizontalLine" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner_gray_shape"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/white" />
+
+</LinearLayout>
